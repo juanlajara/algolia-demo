@@ -6,12 +6,12 @@ const { createQuerySuggestionsPlugin } =
   window['@algolia/autocomplete-plugin-query-suggestions'];
 
 const searchClient = algoliasearch(
-  'B1G2GM9NG0',
-  'aadef574be1f9252bb48d4ea09b5cfe5'
+  'FJP3NJ27ZK',
+  'a67a7bb9db0953c21f0c388db88067b8'
 );
 
 const search = instantsearch({
-  indexName: 'demo_ecommerce',
+  indexName: 'demo_algolia_bestbuy',
   searchClient,
   future: { preserveSharedStateOnUnmount: true },
   insights: true,
