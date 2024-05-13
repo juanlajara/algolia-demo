@@ -25,12 +25,16 @@ search.addWidgets([
     container: '#hits',
     templates: {
       item: (hit, { html, components }) => html`
-        <article>
-          <img src=${hit.image} alt=${hit.name} />
-          <div>
-            <h1>${components.Highlight({ hit, attribute: 'name' })}</h1>
+        <div>
+          <img src="${hit.image}" align="left" alt="${hit.name}" />
+          <div class="hit-name">
+            ${components.Highlight({ hit, attribute: 'name' })}
           </div>
-        </article>
+          <div class="hit-description">
+            ${components.Highlight({ hit, attribute: 'description' })}
+          </div>
+          <div class="hit-price">$${hit.price}</div>
+        </div>
       `,
     },
   }),
