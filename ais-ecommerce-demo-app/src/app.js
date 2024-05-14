@@ -64,6 +64,11 @@ search.addWidgets([
     container: '#rating-menu',
     attribute: 'rating',
   }),
+  instantsearch.widgets.rangeSlider({
+    container: '#range-slider',
+    attribute: 'price',
+    min:5,
+  }),
 ]);
 
 
