@@ -68,6 +68,7 @@ search.addWidgets([
     container: '#range-slider',
     attribute: 'price',
     min:5,
+    precision: -2,
   }),
 ]);
 
