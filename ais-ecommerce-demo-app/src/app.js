@@ -59,6 +59,11 @@ search.addWidgets([
   instantsearch.widgets.configure({
     hitsPerPage: 8
   }),
+
+  instantsearch.widgets.ratingMenu({
+    container: '#rating-menu',
+    attribute: 'rating',
+  }),
 ]);
 
 
